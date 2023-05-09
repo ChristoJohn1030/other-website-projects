@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple ball animation</title>
+
+    <style>
+
+
+        body
+            {
+                background-color:black;
+                color:white;
+            }
+
+        .header
+        {
+            border:2px double royalblue;
+
+            margin:10px;
+
+            padding:10px;
+        }
+
+        .header-text
+        {
+            text-align: center;
+            text-decoration: none;
+            border:2px double rgb(115, 0, 255);
+            width:fit-content;
+            padding:5px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            color:rgb(11, 147, 4);
+
+        }
+        a
+        {
+            text-decoration: none;
+            border:2px solid red;
+            width:fit-content;
+            padding:5px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            color:aquamarine;
+
+            background-color: rgba(86, 86, 208, 0.41);
+        }
+
+        .ball
+        {
+            width:100px;
+            height:100px;
+            border:2px groove rebeccapurple;
+
+            margin-top:200px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(90deg, blue,green);
+
+            animation:ball-anime 10s linear infinite;
+
+            box-shadow: 3px 0px 6px rgba(255, 255, 255, 0.598);
+        }
+
+        @keyframes ball-anime
+        {
+            0%
+            {
+                transform:rotate(0deg);
+                position:relative;
+                left:0%;
+            }
+
+            50%
+            {
+                transform:rotate(360deg);
+                position:relative;
+                left:95%;
+            }
+
+            100%
+            {
+                transform:rotate(0deg);
+                position:relative;
+                left:0%;
+            }
+
+            
+        }
+
+    </style>
+
+       
+
+  </head>
+
+  <body>
+    <main>
+
+      <div class="header">
+
+        <h1 class="header-text">Simple ball animation</h1>
+
+        <h6 class="h6-1"> <a href="../css-animations/list.html"> Go back to CSS animations list</a></h6>
+
+        <h6 class="h6-2"> <a href="../../sitefiles/index.html"> Go back to all Web projects list</a></h6>
+
+      </div>
+
+        <div class="ball"></div>
+
+    <hr>
+      
+
+
+    </main>
+  </body>
+</html>
