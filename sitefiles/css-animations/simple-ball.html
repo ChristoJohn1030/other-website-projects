@@ -10,6 +10,8 @@
             {
                 background-color:black;
                 color:white;
+
+                animation:body-anim 5s infinite;
             }
 
         .header
@@ -31,6 +33,9 @@
 
             font-family: Arial, Helvetica, sans-serif;
 
+            margin-right: auto;
+            margin-left: auto;
+
             color:rgb(11, 147, 4);
 
         }
@@ -50,19 +55,20 @@
 
         .ball
         {
-            width:100px;
-            height:100px;
-            border:2px groove rebeccapurple;
+            width:50px;
+            height:50px;
+            border:2px solid rebeccapurple;
 
             margin-top:200px;
+            margin-bottom:-5px;
 
             border-radius: 50%;
 
-            background: linear-gradient(90deg, blue,green);
+            background: linear-gradient(30deg, blue,green,red);
 
-            animation:ball-anime 10s linear infinite;
+            animation:ball-anime 5s linear infinite;
 
-            box-shadow: 3px 0px 6px rgba(255, 255, 255, 0.598);
+            box-shadow: 3px 0px 6px rgba(143, 189, 17, 0.515);
         }
 
         @keyframes ball-anime
@@ -90,6 +96,15 @@
 
             
         }
+
+        @keyframes body-anim
+        {
+            0%
+            {
+                background-color: black;
+            }
+        }
+
 
     </style>
 
