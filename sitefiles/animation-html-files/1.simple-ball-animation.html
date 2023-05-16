@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Ball Animation</title>
+
+        <style>
+
+            body
+            {
+                background-color:black;
+                color:white;
+            }
+
+            
+            .ball
+            {
+                width:50px;
+                height:50px;
+                border:2px solid rebeccapurple;
+                border-radius:50%;
+
+                margin-top:200px;
+                margin-bottom:-5px;
+
+                background:linear-gradient(30deg,blue,red,green);
+
+                animation:ball-anime 5s linear infinite;
+
+                box-shadow:3px 0px 6px rgba(143,189,170.515);
+
+            }
+
+            @keyframes ball-anime
+            {
+                0%
+                    {
+                        transform:rotate(0deg);
+                        position:relative;
+                        left:0%;
+
+                    }
+                50%
+                    {
+                        transform:rotate(360deg);
+                        position:relative;
+                        left:95%;
+
+                    }
+                100%
+                    {
+                        transform:rotate(0deg);
+                        position:relative;
+                        left:0%;
+                    }
+            }
+
+
+        </style>
+    </head>
+
+    <body class="body">
+        <main>
+
+            <div class="ball"> </div>
+
+            <hr>
+        </main>
+    </body>
+</html>
