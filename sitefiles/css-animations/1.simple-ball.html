@@ -52,48 +52,12 @@
                 background-color:rgba(86,86,208,0.41);
             }
 
-            .ball
+            iframe
             {
-                width:50px;
-                height:50px;
-                border:2px solid rebeccapurple;
-                border-radius:50%;
-
-                margin-top:200px;
-                margin-bottom:-5px;
-
-                background:linear-gradient(30deg,blue,red,green);
-
-                animation:ball-anime 5s linear infinite;
-
-                box-shadow:3px 0px 6px rgba(143,189,170.515);
-
+                width:90vw;
+                height:90vh;
+                margin:10px;
             }
-
-            @keyframes ball-anime
-            {
-                0%
-                    {
-                        transform:rotate(0deg);
-                        position:relative;
-                        left:0%;
-
-                    }
-                50%
-                    {
-                        transform:rotate(360deg);
-                        position:relative;
-                        left:95%;
-
-                    }
-                100%
-                    {
-                        transform:rotate(0deg);
-                        position:relative;
-                        left:0%;
-                    }
-            }
-
 
         </style>
     </head>
@@ -110,9 +74,9 @@
                 <h6> <a href="./source-code/1.simple-ball.md"> View Source Code</a></h6>
             </div>
 
-            <div class="ball"> </div>
+            <iframe src="../animation-html-files/1.simple-ball-animation.html"></iframe>
 
-            <hr>
+            <h6><a href="../animation-html-files/1.simple-ball-animation.html"> Click to view full screen </a></h6>
         </main>
     </body>
 </html>
