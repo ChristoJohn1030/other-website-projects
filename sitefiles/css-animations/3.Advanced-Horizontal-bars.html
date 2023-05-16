@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Advanced Horizontal Bar effect</title>
-
+        <title>Advanced Horizontal Bars</title>
         <style>
 
             body
             {
                 background-color:black;
                 color:white;
-
-                
             }
 
             .header
@@ -20,6 +17,8 @@
                 margin:10px;
 
                 padding:10px;
+
+                
             }
 
             .header-text
@@ -54,156 +53,20 @@
                 background-color:rgba(86,86,208,0.41);
             }
 
-           
-
-            .bar1
+            iframe
             {
-                border:2px double gold;
-                height: 10vh;
-                width:0vw;
-
+                width:90vw;
+                height:90vh;
                 margin:10px;
-                margin-right: auto;
-                margin-left: auto;
-
-                background:linear-gradient(40deg,yellow,red,blue);
-
-
             }
 
-            .bar2
-            {
-                border:2px double silver;
-                height: 10vh;
-                width:0vw;
-
-                margin:10px;
-                margin-right: auto;
-                margin-left: auto;
-
-                background:linear-gradient(40deg,green,orange,purple);
-            }
-
-            .bar3
-            {
-                border:2px double rgb(98, 255, 0);
-                height: 10vh;
-                width:0vw;
-
-                margin:10px;
-                margin-right: auto;
-                margin-left: auto;
-
-                background:linear-gradient(40deg,teal,magenta,gold);
-            }
-
-            .bar4
-            {
-                border:2px double rgb(164, 7, 178);
-                height: 10vh;
-                width:0vw;
-
-                margin:10px;
-                margin-right: auto;
-                margin-left: auto;
-
-                background:linear-gradient(40deg,red,white,blue);
-            }
-
-            .bar5
-            {
-                border:2px double rgb(255, 0, 8);
-                height: 10vh;
-                width:0vw;
-
-                margin:10px;
-                margin-right: auto;
-                margin-left: auto;
-
-                background:linear-gradient(40deg,blue,green,yellow);
-            }
-
-            .bar1,.bar3,.bar5
-            {
-                animation:odd-bars 1s linear infinite;
-                
-            }
-
-            .bar2,.bar4
-            {
-                animation:even-bars 1s linear infinite;
-            }
-
-            @keyframes odd-bars
-            {
-                0%
-                {
-                    width:90vw;
-                }
-
-                25%
-                {
-                    width:45vw;
-                }
-
-                50%
-                {
-                    width:0vw;
-                    transform:rotate(180deg);
-                    
-                }
-
-                75%
-                {
-                    width:45vw;
-                }
-
-                100%
-                {
-                    width:90vw;
-                    transform:rotate(360deg);
-                }
-
-            }
-
-            @keyframes even-bars
-            {
-                0%
-                {
-                    width:0vw;
-                }
-
-                25%
-                {
-                    width:45vw;
-                }
-
-                50%
-                {
-                    width:90vw;
-                    transform:rotate(-180deg);
-                }
-
-                75%
-                {
-                    width:45vw;
-                }
-
-                100%
-                {
-                    width:0vw;
-                    transform:rotate(-360deg);
-                }
-            }
-
-            
         </style>
     </head>
 
     <body class="body">
         <main>
             <div class="header">
-                <h1 class="header-text">Advanced Horizontal Bar Animation</h1>
+                <h1 class="header-text">Advanced Circular Effect</h1>
 
                 <h6><a href="../css-animations/list.html"> Go Back to CSS animations List</a></h6>
 
@@ -214,16 +77,14 @@
 
             <div class="main-div">
 
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <div class="bar4"></div>
-                <div class="bar5"></div>
+                <iframe src="../animation-html-files/3.advanced-horizontal-bars.html" width="fit-content" height="fit-content" class="iframe"></iframe>
+
+                <h6><a href="../animation-html-files/3.advanced-horizontal-bars.html"> Click to view full screen </a></h6>
 
             </div>
            
 
-            <hr>
+            
         </main>
     </body>
 </html>
