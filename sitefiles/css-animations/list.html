@@ -7,26 +7,36 @@
 
         body
             {
-                background-color:black;
-                color:white;
-                border:2px double rosybrown;
-                height:100vh;
-  
-                margin:10px;
+                background-color:rgb(0, 0, 0);
+                border:4px double rgb(188, 143, 143);
+                min-height:100vh;
+                
+                margin:2vw;
+                width:95vw;
+                
+
               }
   
           .header
           {
-              border:2px double rgb(225, 174, 65);
+              border:4px double rgb(225, 174, 65);
+              width:85vw;
   
-              margin:10px;
+              margin:2vh;
   
-              padding:10px;
+              padding:2vh;
+
+              display:flex;
+              flex-direction: row;
+              justify-content: center;
+
+              margin-right: auto;
+              margin-left: auto;
           }
   
           .header-text
           {
-              text-align: center;
+              
               text-decoration: none;
   
               font-family: Arial, Helvetica, sans-serif;
@@ -39,39 +49,44 @@
               text-decoration: none;
               
               width:fit-content;
-              padding:5px;
+              padding:3vw;
   
               font-family: Arial, Helvetica, sans-serif;
   
-              color:aquamarine;
+              color:rgb(127, 255, 212);
   
               
           }
   
+          .footer
+          {
+              border:4px double rgb(255, 217, 0);
+              padding:1vw;
+              background-color:rgb(5, 46, 24);
+
+              width:87vw;
+
+              display:flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              align-items:center;
+              
+
+              margin-right: auto;
+              margin-left: auto;
+
+          }
   
+
           .warning
           {
               text-align: left;
               text-decoration: none;
-  
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: 2vw;
-              
-              border:2px double rgb(255, 217, 0);
-              padding:10px;
-
-              position:absolute;
-              bottom:0px;
-              width:90vw;
-  
+              width:fit-content;
               color:rgb(255, 0, 0);
-
-              
-              display:block;
-              margin-right: auto;
-              margin-left: auto;
-
-              background-color:rgb(5, 46, 24);
+  
+              font-family:monospace;
+              font-size: 1em;
           }
       </style>
 
@@ -104,8 +119,14 @@
         </ul>
 
       </div>
-      
-<h2 class="warning"> Warning : These Animations may cause unexpected random behavior on different Browser windows !!!</h2>
-    </main>
+
+    </main>   
+
+    <footer class="footer">     
+
+      <h2 class="warning"> Warning : These Animations may cause unexpected random behavior on different Browser windows !!!</h2>
+
+    </footer> 
+
   </body>
 </html>
